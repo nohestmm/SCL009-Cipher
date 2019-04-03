@@ -1,1 +1,9 @@
-/* Acá va tu código */
+.Error {
+    display: none;
+    color: red;
+    font-size: 0.8em;
+}
+
+.textUp {
+    text-transform: uppercase;
+}
