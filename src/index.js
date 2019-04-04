@@ -29,44 +29,6 @@ else if (action === 2) {
 
 
 }
-
-/* funcion validar entrada cifrar*/
-const validationInputCipher = () =>{
-
-  let validationPhrase, validationOffset;
-  validationPhrase = document.getElementById("textCipher").value;
-  validationOffset = document.getElementById("offsetCipher").value;
- 
-
-  if (validationPhrase === '' && validationOffset !== ''){
-     document.getElementById("Error1").style.display = 'block';
-     document.getElementById("Error2").style.display = 'none';
-     document.getElementById("Error1").value = '';
-     document.getElementById("resultCipher").value = '';
-     document.getElementById("textCipher").focus();
-       
-  }
-    else if (validationPhrase !== '' && validationOffset === '' ){
-     
-     document.getElementById("Error1").style.display = 'none';
-     document.getElementById("Error2").style.display = 'block';
-     document.getElementById("resultCipher").value = '';
-     document.getElementById("offsetCipher").focus();
-       
-  } 
-  else if (validationPhrase === '' && validationOffset === ''){
-     document.getElementById("Error1").style.display = 'block';
-     document.getElementById("Error2").style.display = 'block';
-     document.getElementById("resultCipher").value = '';
-     document.getElementById("textCipher").focus();
-       
-  } else {
-    document.getElementById("Error1").style.display = 'none';
-    document.getElementById("Error2").style.display = 'none';
-    
-    captureCipher();} 
-}
-
 /* Cual boton fue seleccionado*/
 btnShowC.addEventListener("click",() => {
 action = 1;
@@ -77,10 +39,49 @@ btnShowD.addEventListener("click",() => {
   validationInputCipher();
   });
 
+/* funcion validar entrada cifrar*/
+const validationInputCipher = () =>{
 
-/* funcion limpiar campos cifrar*/
-const cleaningCipher = () =>{
+  let validationPhrase, validationOffset;
+  validationPhrase = document.getElementById("textCipher").value;
+  validationOffset = document.getElementById("offsetCipher").value;
+ 
+
+  if (validationPhrase === "" && validationOffset !== ""){
+     document.getElementById("Error1").style.display = "block";
+     document.getElementById("Error2").style.display = "none";
+     document.getElementById("Error1").value = "";
+     document.getElementById("resultCipher").value = "";
+     document.getElementById("textCipher").focus();
+       
+  }
+    else if (validationPhrase !== "" && validationOffset === "" ){
+     
+     document.getElementById("Error1").style.display = "none";
+     document.getElementById("Error2").style.display = "block";
+     document.getElementById("resultCipher").value = "";
+     document.getElementById("offsetCipher").focus();
+       
+  } 
+  else if (validationPhrase === "" && validationOffset === ""){
+     document.getElementById("Error1").style.display = 'block';
+     document.getElementById("Error2").style.display = 'block';
+     document.getElementById("resultCipher").value = "";
+     document.getElementById("textCipher").focus();
+       
+  } else {
+    document.getElementById("Error1").style.display = "none";
+    document.getElementById("Error2").style.display = "none";
+    
+    captureCipher();} 
+}
+
+
+
+
    
+  btnClean.addEventListener("click",() => {
+
   document.getElementById("labelResult").innerHTML = "Resultado:";
   document.getElementById("textCipher").value = '';
   document.getElementById("offsetCipher").value = '';
@@ -90,6 +91,6 @@ const cleaningCipher = () =>{
   document.getElementById("textCipher").focus();
  
   
-}
+});
 
-btnClean.addEventListener("click", cleaningCipher);
+

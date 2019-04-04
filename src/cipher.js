@@ -1,6 +1,6 @@
 
 
- let x, cipher1 , deCipher , asciiCode, asciiCodem;
+ let x, cipher1 , deCipher , asciiCode, asciiCodem, exception;
  
  window.cipher = {
  
@@ -13,7 +13,7 @@
       x = string.charCodeAt(i);
      
 
-       if (x === 32 || x === 44)
+       if (x === 32 || x === 44 )
         {
           cipher1 = cipher1 + String.fromCharCode(x); 
         }
@@ -26,10 +26,14 @@
       }
   else if (x >= 97 && x<=122)
   {
-    asciiCodem = (((x - 97) + offset) % 26) + 97;
-    cipher1 = cipher1 + String.fromCharCode(asciiCodem); 
+    asciiCode = (((x - 97) + offset) % 26) + 97;
+    cipher1 = cipher1 + String.fromCharCode(asciiCode); 
 
 
+  }
+  else if (string.charAt(i) === 'Ñ' ||string.charAt(i) === 'ñ')
+  {
+    cipher1 = cipher1 + string.charAt(i);
   }
      
          
@@ -59,11 +63,16 @@
      
      else if (x >= 97 && x<=122)
      {
-       asciiCodem = (((x - 122) - offset) % 26) + 122;
-       deCipher = deCipher + String.fromCharCode(asciiCodem); 
+      asciiCode = (((x - 122) - offset) % 26) + 122;
+       deCipher = deCipher + String.fromCharCode(asciiCode); 
    
    
      }
+     else if (string.charAt(i) === 'Ñ' ||string.charAt(i) === 'ñ')
+     {
+      deCipher = deCipher + string.charAt(i);
+     }
+
      
    }
     
