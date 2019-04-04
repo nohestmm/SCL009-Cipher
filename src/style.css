@@ -4,6 +4,29 @@
     font-size: 0.8em;
 }
 
-.textUp {
-    text-transform: uppercase;
+.textOffset {
+    border: 2px solid rgba(55, 133, 136, 0.733);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.divResult {
+    background-color: #e5e6e6;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 54%!important;
+    text-align: justify;
+}
+
+.secondRow {
+    margin-top: 4%;
 }

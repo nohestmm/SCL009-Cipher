@@ -13,7 +13,9 @@
 
 
     <div class="container">
-        <div class="row">
+
+        <div class="row"><img src="images/logo.jpg"> </div>
+        <div class="row secondRow">
             <div class="col">
                 <p class>Desplazamiento:<input type="text" id="offsetCipher" class="textOffset"></p>
                 <p class="Error" id="Error2">Debe ingresar un numero de desplazamiento</p>
@@ -27,17 +29,20 @@
                 <p class="Error" id="Error1">Debe ingresar una frase</p>
             </div>
             <div class="col">
-                <p>Texto Cifrado:</p>
-                <textarea id="resultCipher" cols="30" rows="8"></textarea>
+                <p id="labelResult">Resultado:</p>
+                <!--<textarea readonly="true" id="resultCipher" cols="30" rows="8"></textarea>-->
+                <div class="divResult">
+                    <p id="resultCipher"></p>
+                </div>
 
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <button id="btnCipher">Cifrar</button> <button id="btnDecipher">Descifrar</button>
+                <button id="btnCipher" class="btn btn-info">Cifrar</button> <button class="btn btn-info" id="btnDecipher">Descifrar</button>
             </div>
             <div class="col">
-                <button id="clean">Limpiar</button>
+                <button id="clean" class="btn btn-info">Limpiar</button>
             </div>
 
         </div>
