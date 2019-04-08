@@ -14,7 +14,7 @@
       x = string.charCodeAt(i);
      
 
-       if (x === 32 || x === 44 )
+       if (x === 32 || x === 45 || x === 46 || x=== 95 )
         {
           cipher1 = cipher1 + String.fromCharCode(x); 
         }
@@ -85,7 +85,7 @@
       x = string.charCodeAt(i); 
     
 
-      if (x === 32 || x === 44)
+      if (x === 32 || x === 45 || x === 46 || x=== 95 )
        {
          deCipher = deCipher + String.fromCharCode(x); 
        }
@@ -106,7 +106,8 @@
      }
      
      else if (x >= 97 && x<=122)
-     { if (offset>=0){
+     { 
+       if (offset>=0){
       asciiCode = ((x - 122- offset) % 26) + 122;
        deCipher = deCipher + String.fromCharCode(asciiCode); 
      }
@@ -126,7 +127,7 @@
         
             else if (offset < 0){
         
-              asciiCode = ((x - 48 + offset )% 10) + 48; 
+              asciiCode = ((x - 48 - offset )% 10) + 48; 
               deCipher = deCipher + String.fromCharCode(asciiCode);
             }
         
