@@ -48,6 +48,21 @@
     }
 
   }
+  else if (x >= 48 && x<= 57){
+    if (offset >= 0){
+      asciiCode = ((x - 48 + offset) % 10) + 48;
+      cipher1 = cipher1 + String.fromCharCode(asciiCode); 
+      }
+  
+      else if (offset < 0){
+  
+        asciiCode = ((x - 57 + offset )% 10) + 57; 
+        cipher1 = cipher1 + String.fromCharCode(asciiCode);
+      }
+  
+  }
+
+
   else if (string.charAt(i) === 'Ñ' ||string.charAt(i) === 'ñ')
   {
     cipher1 = cipher1 + string.charAt(i);
@@ -102,6 +117,20 @@
      }
 
         }
+
+        else if (x >= 48 && x<= 57){
+          if (offset >= 0){
+            asciiCode = ((x - 57 - offset) % 10) + 57;
+            deCipher = deCipher + String.fromCharCode(asciiCode); 
+            }
+        
+            else if (offset < 0){
+        
+              asciiCode = ((x - 48 + offset )% 10) + 48; 
+              deCipher = deCipher + String.fromCharCode(asciiCode);
+            }
+        
+        }   
 
 
 
