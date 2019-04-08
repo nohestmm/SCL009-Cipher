@@ -1,5 +1,5 @@
 /* inicializando variables */
-let offsetC,stringCipher,returnCipher,returnDecipher, action; 
+let offset,string,returnCipher,returnDecipher, action; 
 let btnShowC = document.getElementById("btnCipher");
 let btnShowD = document.getElementById("btnDecipher");
 let btnClean = document.getElementById("clean");
@@ -7,21 +7,21 @@ let btnClean = document.getElementById("clean");
 /* capturando la frase a cifrar*/
 const captureCipher = () =>{
  
-stringCipher= document.getElementById("textCipher").value;
-stringCipher = stringCipher.trim();
+string = document.getElementById("textCipher").value;
+string = string.trim();
 
 /* offset de cifrado*/
 
-offsetC = parseInt(document.getElementById("offsetCipher").value,10);
+offset = parseInt(document.getElementById("offsetCipher").value);
 
 if (action === 1) {
- returnCipher = window.cipher.encode(offsetC,stringCipher); 
+ returnCipher = window.cipher.encode(offset,string); 
  document.getElementById("resultCipher").innerHTML= returnCipher;
  document.getElementById("labelResult").innerHTML = "Texto Cifrado:";
 }
 
 else if (action === 2) {
-  returnDecipher =  window.cipher.decode(offsetC,stringCipher); 
+  returnDecipher =  window.cipher.decode(offset,string); 
   document.getElementById("resultCipher").innerHTML = returnDecipher;
   document.getElementById("labelResult").innerHTML = "Texto Descifrado:";
 
@@ -64,8 +64,8 @@ const validationInputCipher = () =>{
        
   } 
   else if (validationPhrase === "" && validationOffset === ""){
-     document.getElementById("Error1").style.display = 'block';
-     document.getElementById("Error2").style.display = 'block';
+     document.getElementById("Error1").style.display = "block";
+     document.getElementById("Error2").style.display = "block";
      document.getElementById("resultCipher").value = "";
      document.getElementById("textCipher").focus();
        
@@ -76,10 +76,6 @@ const validationInputCipher = () =>{
     captureCipher();} 
 }
 
-
-
-
-   
   btnClean.addEventListener("click",() => {
 
   document.getElementById("labelResult").innerHTML = "Resultado:";
@@ -88,7 +84,7 @@ const validationInputCipher = () =>{
   document.getElementById("resultCipher").innerHTML = '';
   document.getElementById("Error1").style.display = 'none';
   document.getElementById("Error2").style.display = 'none';
-  document.getElementById("textCipher").focus();
+  document.getElementById("offsetCipher").focus();
  
   
 });
