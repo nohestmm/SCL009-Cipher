@@ -9,7 +9,7 @@ let offset,string,returnCipher,returnDecipher, action;
 btnAccess.addEventListener("click",() => {
   printHtml += '<div class="row"><img src="images/logo.jpg"> </div><div class="row secondRow"><div class="col">';
   printHtml += '<p>Desplazamiento:<input type="number" min="1" max="100" id="offsetCipher" class="textOffset"></p><p class="Error" id="Error2">Debe ingresar un numero de desplazamiento</p></div></div>';
-  printHtml += '<div class="row"><div class="col"><p>Ingresa tu Texto Aqui:</p><textarea id="textCipher" cols="30" rows="8" class="textUp"></textarea>';
+  printHtml += '<div class="row"><div class="col"><p>Ingresa los datos de tu cuenta:</p><textarea id="textCipher" cols="30" rows="8" class="textUp"></textarea>';
   printHtml += '<p class="Error" id="Error1">Debe ingresar una frase</p></div><div class="col"><p id="labelResult">Resultado:</p><div class="divResult"><p id="resultCipher"></p></div></div></div>';
   printHtml += '<div class="row"><div class="col"><button id="btnCipher" class="btn btn-info">Cifrar</button> <button class="btn btn-info" id="btnDecipher">Descifrar</button></div><div class="col"><button id="clean" class="btn btn-info">Limpiar</button></div></div></div><br><br><footer class="centert cursive">Todos los derechos reservados 2019</>';
   
