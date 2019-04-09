@@ -19,7 +19,18 @@ let btnClean = document.getElementById("clean");
 let btnShowC = document.getElementById("btnCipher");
 let btnShowD = document.getElementById("btnDecipher");
 
-  btnClean.addEventListener("click",() => {
+btnShowC.addEventListener("click",() => {
+action = 1;
+validationInputCipher();
+});
+
+
+btnShowD.addEventListener("click",() => {
+action = 2;
+validationInputCipher();
+  });
+  
+btnClean.addEventListener("click",() => {
 
     document.getElementById("labelResult").innerHTML = "Resultado:";
     document.getElementById("textCipher").value = "";
@@ -31,14 +42,7 @@ let btnShowD = document.getElementById("btnDecipher");
    
   });
   
- btnShowC.addEventListener("click",() => {
-action = 1;
-validationInputCipher();
-});
-btnShowD.addEventListener("click",() => {
-  action = 2;
-  validationInputCipher();
-  });
+ 
   
 });
 
@@ -104,21 +108,6 @@ const validationInputCipher = () =>{
     captureCipher();} 
 }
   
-
-
-
-
-/*btnClean.addEventListener("click",() => {
-
-  document.getElementById("labelResult").innerHTML = "Resultado:";
-  document.getElementById("textCipher").value = "";
-  document.getElementById("offsetCipher").value = "";
-  document.getElementById("resultCipher").innerHTML = "";
-  document.getElementById("Error1").style.display = "none";
-  document.getElementById("Error2").style.display = "none";
-  document.getElementById("offsetCipher").focus();
- 
-});*/
 
 
 
