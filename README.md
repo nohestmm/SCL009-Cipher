@@ -2,7 +2,7 @@
 
 Cifrar o encriptar informacion, se utiliza desde tiempos antiguos para la proteccion de los datos. El objetivo de esta aplicacion principalmente es permitirle al usuario cifrar su informacion bancaria, mediante el metodo del Cifrado Cesar, el cual consiste en reemplazar cada letra o numero del texto ingresado en un numero de posiciones indicadas.
 
-para agregar un link [Cifrado](https://google.com)
+ ![Cifrado](https://justcodeit.io/wp-content/uploads/2018/08/Cifrado_Cesar_Python.png)
 
 La idea surge por la necesidad que existe para los venezolanos de no poder acceder estando en el exterior a sus cuentas bancarias, ya que la cuenta se bloquea cuando determina que se accede de un pais distinto. Por lo que se requiere de que algun tercero que se encuentre en la region para que con los datos pueda realizar las transacciones necesarias.
 
@@ -23,7 +23,7 @@ La aplicacion es de facil uso y permite ingresar los caracteres especiales exclu
 
 
 
-Puedo agregar imagenes  ! [Imagen del Cifrado](src/images/logo.jpg)
+![Imagen del Cifrado](src/images/logo.jpg)
 
 ## Diseno y Construccion
 
