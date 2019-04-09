@@ -1,8 +1,46 @@
 /* inicializando variables */
+
+
+let printHtml = '';
+let btnAccess = document.getElementById("access");
 let offset,string,returnCipher,returnDecipher, action; 
+
+
+btnAccess.addEventListener("click",() => {
+  printHtml += '<div class="row"><img src="images/logo.jpg"> </div><div class="row secondRow"><div class="col">';
+  printHtml += '<p>Desplazamiento:<input type="number" min="1" max="100" id="offsetCipher" class="textOffset"></p><p class="Error" id="Error2">Debe ingresar un numero de desplazamiento</p></div></div>';
+  printHtml += '<div class="row"><div class="col"><p>Ingresa tu Texto Aqui:</p><textarea id="textCipher" cols="30" rows="8" class="textUp"></textarea>';
+  printHtml += '<p class="Error" id="Error1">Debe ingresar una frase</p></div><div class="col"><p id="labelResult">Resultado:</p><div class="divResult"><p id="resultCipher"></p></div></div></div>';
+  printHtml += '<div class="row"><div class="col"><button id="btnCipher" class="btn btn-info">Cifrar</button> <button class="btn btn-info" id="btnDecipher">Descifrar</button></div><div class="col"><button id="clean" class="btn btn-info">Limpiar</button></div></div></div><br><br><footer class="centert cursive">Todos los derechos reservados 2019</>';
+  
+  document.getElementById("container").innerHTML = printHtml;
+
+let btnClean = document.getElementById("clean");
 let btnShowC = document.getElementById("btnCipher");
 let btnShowD = document.getElementById("btnDecipher");
-let btnClean = document.getElementById("clean");
+
+  btnClean.addEventListener("click",() => {
+
+    document.getElementById("labelResult").innerHTML = "Resultado:";
+    document.getElementById("textCipher").value = "";
+    document.getElementById("offsetCipher").value = "";
+    document.getElementById("resultCipher").innerHTML = "";
+    document.getElementById("Error1").style.display = "none";
+    document.getElementById("Error2").style.display = "none";
+    document.getElementById("offsetCipher").focus();
+   
+  });
+  
+ btnShowC.addEventListener("click",() => {
+action = 1;
+validationInputCipher();
+});
+btnShowD.addEventListener("click",() => {
+  action = 2;
+  validationInputCipher();
+  });
+  
+});
 
 /* capturando la frase a cifrar*/
 const captureCipher = () =>{
@@ -27,19 +65,9 @@ else if (action === 2) {
 
 }
 
-
 }
-/* Cual boton fue seleccionado*/
-btnShowC.addEventListener("click",() => {
-action = 1;
-validationInputCipher();
-});
-btnShowD.addEventListener("click",() => {
-  action = 2;
-  validationInputCipher();
-  });
 
-/* funcion validar entrada cifrar*/
+
 const validationInputCipher = () =>{
 
   let validationPhrase, validationOffset;
@@ -75,18 +103,24 @@ const validationInputCipher = () =>{
     
     captureCipher();} 
 }
+  
 
-  btnClean.addEventListener("click",() => {
+
+
+
+/*btnClean.addEventListener("click",() => {
 
   document.getElementById("labelResult").innerHTML = "Resultado:";
-  document.getElementById("textCipher").value = '';
-  document.getElementById("offsetCipher").value = '';
-  document.getElementById("resultCipher").innerHTML = '';
-  document.getElementById("Error1").style.display = 'none';
-  document.getElementById("Error2").style.display = 'none';
+  document.getElementById("textCipher").value = "";
+  document.getElementById("offsetCipher").value = "";
+  document.getElementById("resultCipher").innerHTML = "";
+  document.getElementById("Error1").style.display = "none";
+  document.getElementById("Error2").style.display = "none";
   document.getElementById("offsetCipher").focus();
  
-  
-});
+});*/
+
+
+
 
 

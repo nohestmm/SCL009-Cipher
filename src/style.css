@@ -29,3 +29,20 @@ textarea {
 .secondRow {
     margin-top: 4%;
 }
+
+.welcome {
+    margin-top: 150px;
+}
+
+.centert {
+    text-align: center;
+}
+
+.titles {
+    color: #4B9DBF;
+    font-size: 30px;
+}
+
+.cursive {
+    font-style: italic;
+}
