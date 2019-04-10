@@ -2,7 +2,7 @@
 
 Cifrar o encriptar información, se utiliza desde tiempos antiguos para la protección de los datos. El objetivo de esta aplicación principalmente es permitirle al usuario cifrar su información bancaria, mediante el método del Cifrado Cesar, el cual consiste en reemplazar cada letra o numero del texto ingresado en un numero de posiciones indicadas.
 
- ![Cifrado](https://justcodeit.io/wp-content/uploads/2018/08/Cifrado_Cesar_Python.png)
+ ![Cifrado](src/images/aplicacion.jpg)
 
 La idea surge por la necesidad que existe para los venezolanos de no poder acceder estando en el exterior a sus cuentas bancarias, ya que la cuenta se bloquea cuando se determina que hubo un intento de ingreso a la entidad bancaria desde país distinto, por lo que se requiere de un tercero que se encuentre en Venezuela que posea la información para realizar las transacciones necesarias.
 
@@ -53,6 +53,9 @@ A partir de este prototipo se define el diseño de la aplicación, se crea el lo
 
 ## Demostración
 
+En el siguiente vinculo puedes acceder y experimentar el funcionamiento de la aplicación: [Enlace
+](https://nohestmm.github.io/SCL009-Cipher/src/index.html)
+
 ### Pasos a seguir 
 * Dar click en el boton de acceso.
 * Colocar un desplazamiento para lograr cifrar o descifrar.
@@ -60,8 +63,6 @@ A partir de este prototipo se define el diseño de la aplicación, se crea el lo
 * Pulsar el boton de cifrado o descifrado.
 * Visualizar el resultado.
 * Limpiar los campos para volver a cifrar o descifrar.
-En el siguiente vinculo puedes acceder y experimentar el funcionamiento de la aplicación: [Enlace
-](https://nohestmm.github.io/SCL009-Cipher/src/index.html)
 
 
 
