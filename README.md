@@ -48,6 +48,22 @@ A partir de este prototipo se define el diseño de la aplicación, se crea el lo
 
 ![Imagen del Cifrado](src/images/logo.jpg)
 
+##Encuesta
+
+Luego de construir la aplicación se procedió a realizar  encuestas para evaluar la interacción del usuario con la misma. Se selecciono una población de cinco personas de origen venezolano que son poseedoras de cuentas bancarias en esa región. La encuesta se realizo a través de whatsapp, ya que por falta de tiempo no se pudo hacer presencial.
+
+EL dialogo establecido fue el siguiente: 
+
+Hola, me encuentro realizando un estudio para determinar el funcionamiento de una aplicación que brinde seguridad en los datos de las cuentas bancarias, específicamente para personas venezolanas que se encuentran en el extranjero y no pueden realizar transacciones desde el exterior. A continuación tomare unos 5 minutos de su tiempo para responder las siguientes preguntas:
+
+1.- El termino cifrado es para Ud. comprensible?
+2.- Alguna vez se ha visto en la necesidad de cifrar alguna información?
+3.-Requiere Ud. de algún tercero en Venezuela para realizar sus transacciones bancarias?
+4. Considera seguro el envío de sus datos a través de redes sociales o correo electrónico?
+5. Si existiera un modo de enviar sus datos de forma mas segura, optaría por el?
+6.- A continuación el siguiente enlace lo redirige a una aplicación, para cifrar datos y al mismo tiempo descifrarlo, por favor pude hacer uso de ella y dar una opinión acerca de la misma? https://nohestmm.github.io/SCL009-Cipher/src/index.html
+
+
 ## A quien esta dirigida la aplicación
 * A todos aquellos usuarios que deseen encriptar sus datos bancarios.
 
