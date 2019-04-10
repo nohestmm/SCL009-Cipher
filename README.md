@@ -48,7 +48,7 @@ A partir de este prototipo se define el diseño de la aplicación, se crea el lo
 
 ![Imagen del Cifrado](src/images/logo.jpg)
 
-##Encuesta
+## Encuesta
 
 Luego de construir la aplicación se procedió a realizar  encuestas para evaluar la interacción del usuario con la misma. Se selecciono una población de cinco personas de origen venezolano que son poseedoras de cuentas bancarias en esa región. La encuesta se realizo a través de whatsapp, ya que por falta de tiempo no se pudo hacer presencial.
 
