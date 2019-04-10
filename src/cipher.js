@@ -16,7 +16,7 @@
 
        if (x === 32 || x === 45 || x === 46 || x=== 95 )
         {
-          cipher1 = cipher1 + String.fromCharCode(x); 
+          cipher1 += String.fromCharCode(x); 
         }
     
       else if(x >= 65 && x <= 90)
@@ -24,12 +24,12 @@
         if (offset >= 0){
         asciiCode = ((x - 65 + offset) % 26) + 65;
       
-        cipher1 = cipher1 + String.fromCharCode(asciiCode);
+        cipher1 += String.fromCharCode(asciiCode);
         }
        else if (offset < 0){
  
     asciiCode = ((x - 90 + offset )% 26) + 90; 
-    cipher1 = cipher1 + String.fromCharCode(asciiCode);
+    cipher1 += String.fromCharCode(asciiCode);
   
 }
 
@@ -38,26 +38,26 @@
   {
     if (offset >= 0){
     asciiCode = ((x - 97 + offset) % 26) + 97;
-    cipher1 = cipher1 + String.fromCharCode(asciiCode); 
+    cipher1 += String.fromCharCode(asciiCode); 
     }
 
     else if (offset < 0){
 
       asciiCode = ((x - 122 + offset )% 26) + 122; 
-      cipher1 = cipher1 + String.fromCharCode(asciiCode);
+      cipher1 += String.fromCharCode(asciiCode);
     }
 
   }
   else if (x >= 48 && x<= 57){
     if (offset >= 0){
       asciiCode = ((x - 48 + offset) % 10) + 48;
-      cipher1 = cipher1 + String.fromCharCode(asciiCode); 
+      cipher1 += String.fromCharCode(asciiCode); 
       }
   
       else if (offset < 0){
   
         asciiCode = ((x - 57 + offset )% 10) + 57; 
-        cipher1 = cipher1 + String.fromCharCode(asciiCode);
+        cipher1 += String.fromCharCode(asciiCode);
       }
   
   }
@@ -65,7 +65,7 @@
 
   else if (string.charAt(i) === 'Ñ' ||string.charAt(i) === 'ñ')
   {
-    cipher1 = cipher1 + string.charAt(i);
+    cipher1 += string.charAt(i);
   }
      
          
@@ -87,20 +87,20 @@
 
       if (x === 32 || x === 45 || x === 46 || x=== 95 )
        {
-         deCipher = deCipher + String.fromCharCode(x); 
+         deCipher += String.fromCharCode(x); 
        }
      else if(x>=65 && x<= 90)
      { if (offset >= 0){
 
        asciiCode = ((x - 90- offset) % 26) + 90; 
-       deCipher = deCipher + String.fromCharCode(asciiCode);
+       deCipher += String.fromCharCode(asciiCode);
      }
 
      else if  (offset < 0){
 
       asciiCode = ((x - 65 - offset) % 26) + 65;
       
-      deCipher = deCipher + String.fromCharCode(asciiCode);
+      deCipher += String.fromCharCode(asciiCode);
 
      }
      }
@@ -109,11 +109,11 @@
      { 
        if (offset>=0){
       asciiCode = ((x - 122- offset) % 26) + 122;
-       deCipher = deCipher + String.fromCharCode(asciiCode); 
+       deCipher += String.fromCharCode(asciiCode); 
      }
      else if (offset<0){
       asciiCode = ((x - 97 - offset) % 26) + 97;
-      deCipher = deCipher + String.fromCharCode(asciiCode); 
+      deCipher += String.fromCharCode(asciiCode); 
 
      }
 
@@ -122,13 +122,13 @@
         else if (x >= 48 && x<= 57){
           if (offset >= 0){
             asciiCode = ((x - 57 - offset) % 10) + 57;
-            deCipher = deCipher + String.fromCharCode(asciiCode); 
+            deCipher += String.fromCharCode(asciiCode); 
             }
         
             else if (offset < 0){
         
               asciiCode = ((x - 48 - offset )% 10) + 48; 
-              deCipher = deCipher + String.fromCharCode(asciiCode);
+              deCipher += String.fromCharCode(asciiCode);
             }
         
         }   
@@ -137,7 +137,7 @@
 
      else if (string.charAt(i) === 'Ñ' ||string.charAt(i) === 'ñ')
      {
-      deCipher = deCipher + string.charAt(i);
+      deCipher += string.charAt(i);
      }
 
      
