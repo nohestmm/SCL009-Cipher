@@ -7,7 +7,7 @@ let offset,string,returnCipher,returnDecipher, action;
 
 
 btnAccess.addEventListener("click",() => {
-  printHtml += '<div class="row"><div class="col-12"><img src="images/logo.jpg"></div></div><div class="row"><div class="col-12 col-xs-12 col-sm-12 col-md-6">';
+  printHtml += '<div class="row"><div class="col-7"><img src="images/logo.jpg"></div><div class="col-5"><p class="instructor"><b>Instrucciones:</b><br>Colocar un desplazamiento<br>Escribir en el textarea los datos a cifrar/descifrar.<br>Pulsar boton cifrado o descifrado.<br>Visualizar resultado.<br>Limpiar campos.</p></div></div><div class="row"><div class="col-12 col-xs-12 col-sm-12 col-md-6">';
   printHtml += '<p>Desplazamiento:<input type="number" min="1" max="100" id="offsetCipher" class="textOffset"></p><p class="Error" id="Error2">Debe ingresar un numero de desplazamiento</p></div></div>';
   printHtml += '<div class="row"><div class="col-12 col-xs-12 col-sm-12 col-md-6"><p>Ingresa los datos de tu cuenta:</p><textarea id="textCipher" cols="30" rows="8" class="textUp"></textarea>';
   printHtml += '<p class="Error" id="Error1">Debe ingresar una frase</p></div><div class="col"><p id="labelResult">Resultado:</p><div class="divResult"><p id="resultCipher"></p></div></div></div>';

@@ -46,3 +46,8 @@ textarea {
 .cursive {
     font-style: italic;
 }
+
+.instructor {
+    font-size: 0.8em;
+    text-align: center;
+}
