@@ -56,12 +56,12 @@ EL dialogo establecido fue el siguiente:
 
 Hola, me encuentro realizando un estudio para determinar el funcionamiento de una aplicación que brinde seguridad en los datos de las cuentas bancarias, específicamente para personas venezolanas que se encuentran en el extranjero y no pueden realizar transacciones desde el exterior. A continuación tomare unos 5 minutos de su tiempo para responder las siguientes preguntas:
 
-1.- El termino cifrado es para Ud. comprensible?
-2.- Alguna vez se ha visto en la necesidad de cifrar alguna información?
-3.-Requiere Ud. de algún tercero en Venezuela para realizar sus transacciones bancarias?
+1. El termino cifrado es para Ud. comprensible?
+2. Alguna vez se ha visto en la necesidad de cifrar alguna información?
+3. Requiere Ud. de algún tercero en Venezuela para realizar sus transacciones bancarias?
 4. Considera seguro el envío de sus datos a través de redes sociales o correo electrónico?
 5. Si existiera un modo de enviar sus datos de forma mas segura, optaría por el?
-6.- A continuación el siguiente enlace lo redirige a una aplicación, para cifrar datos y al mismo tiempo descifrarlo, por favor pude hacer uso de ella y dar una opinión acerca de la misma? https://nohestmm.github.io/SCL009-Cipher/src/index.html
+6. A continuación el siguiente enlace lo redirige a una aplicación, para cifrar datos y al mismo tiempo descifrarlo, por favor pude hacer uso de ella y dar una opinión acerca de la misma? https://nohestmm.github.io/SCL009-Cipher/src/index.html
 
 
 ## A quien esta dirigida la aplicación
