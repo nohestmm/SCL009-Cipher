@@ -1,3 +1,5 @@
+
+
 /* inicializando variables */
 
 
@@ -7,11 +9,11 @@ let offset,string,returnCipher,returnDecipher, action;
 
 
 btnAccess.addEventListener("click",() => {
-  printHtml += '<div class="row"><div class="col-12 col-md-7"><img src="images/logo.jpg"></div><div class="col-12 col-md-5"><p class="instructor"><b>Instrucciones:</b><br>Colocar numero de desplazamiento<br>Escribir en el textarea los datos a cifrar/descifrar.<br>Pulsar boton cifrado o descifrado.<br>Visualizar resultado.<br>Limpiar campos.</p></div></div><div class="row"><div class="col-12 col-xs-12 col-sm-12 col-md-6">';
-  printHtml += '<p>Desplazamiento:<input type="number" min="1" max="100" id="offsetCipher" class="textOffset"></p><p class="Error" id="Error2">Debe ingresar un numero de desplazamiento</p></div></div>';
-  printHtml += '<div class="row"><div class="col-12 col-xs-12 col-sm-12 col-md-6"><p>Ingresa los datos de tu cuenta:</p><textarea id="textCipher" cols="30" rows="8" class="textUp"></textarea>';
-  printHtml += '<p class="Error" id="Error1">Debe ingresar una frase</p></div><div class="col"><p id="labelResult">Resultado:</p><div class="divResult"><p id="resultCipher"></p></div></div></div>';
-  printHtml += '<div class="row"><div class="col-4"><button id="btnCipher" class="btn btn-info">Cifrar</button> </div><div class="col-4"><button class="btn btn-info" id="btnDecipher">Descifrar</button></div><div class="col-4"><button id="clean" class="btn btn-info">Limpiar</button></div></div></div><br><br><footer class="centert cursive">Todos los derechos reservados 2019</>';
+  printHtml += '<div class="row"><div class="col-xs-12 col-md-6"><img src="images/logo.jpg"></div><div class="col-xs-12 col-md-6 alert alert-info" role="alert"><p class="instructor"><b>Instrucciones:</b><p><ul class="instructor"><li>Colocar numero de desplazamiento</li><li>Escribir en el textarea los datos a cifrar/descifrar.</li><li>Pulsar boton cifrado o descifrado.</li><li>Visualizar resultado.</li><li>Limpiar campos.</li></div></div>';
+  printHtml += '<div class="row"><div class="col-12"><p>Desplazamiento:<input type="number" min="1" max="100" id="offsetCipher" class="textOffset"></p><p class="Error" id="Error1">Debe ingresar un numero entre -100 y 100</p></div></div>';
+  printHtml += '<div class="row"><div class="col-xs-12 col-md-6"><p>Ingresa los datos de tu cuenta:</p><textarea id="textCipher" cols="30" rows="8" class="textUp"></textarea>';
+  printHtml += '<p class="Error" id="Error2">Debe ingresar una frase</p></div><div class="col-xs-12 col-md-6"><p id="labelResult">Resultado:</p><div class="divResult"><p id="resultCipher"></p></div></div></div>';
+  printHtml += '<div class="row"><div class="col-4"><button id="btnCipher" class="btn btn-info">Cifrar</button> </div><div class="col-4"><button class="btn btn-info" id="btnDecipher">Descifrar</button></div><div class="col-4"><button id="clean" class="btn btn-info">Limpiar</button></div></div></div><footer class="centert cursive">Todos los derechos reservados 2019</>';
   
   document.getElementById("container").innerHTML = printHtml;
 
@@ -81,32 +83,35 @@ const validationInputCipher = () =>{
  
 
   if (validationPhrase === "" && validationOffset !== ""){
-     document.getElementById("Error1").style.display = "block";
-     document.getElementById("Error2").style.display = "none";
-     document.getElementById("Error1").value = "";
-     document.getElementById("resultCipher").value = "";
-     document.getElementById("textCipher").focus();
+    
+    document.getElementById("Error1").style.display = "none";
+    document.getElementById("Error2").style.display = "block";
+    document.getElementById("resultCipher").value = "";
+    document.getElementById("textCipher").focus();
        
   }
-    else if (validationPhrase !== "" && validationOffset === "" ){
-     
-     document.getElementById("Error1").style.display = "none";
-     document.getElementById("Error2").style.display = "block";
-     document.getElementById("resultCipher").value = "";
-     document.getElementById("offsetCipher").focus();
+    else if (validationPhrase !== "" && validationOffset ===""){
+      
+    document.getElementById("Error1").style.display = "block";
+    document.getElementById("Error2").style.display = "none";
+    document.getElementById("resultCipher").value = "";
+    document.getElementById("textCipher").focus();
        
   } 
   else if (validationPhrase === "" && validationOffset === ""){
-     document.getElementById("Error1").style.display = "block";
-     document.getElementById("Error2").style.display = "block";
-     document.getElementById("resultCipher").value = "";
-     document.getElementById("textCipher").focus();
-       
-  } else {
+      document.getElementById("Error1").style.display = "block";
+      document.getElementById("Error2").style.display = "block";
+      document.getElementById("resultCipher").value = "";
+     document.getElementById("offsetCipher").focus();
+  }
+  
+
+  else {
     document.getElementById("Error1").style.display = "none";
     document.getElementById("Error2").style.display = "none";
     
-    captureCipher();} 
+    captureCipher();
+  } 
 }
   
 

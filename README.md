@@ -73,12 +73,12 @@ En el siguiente vinculo puedes acceder y experimentar el funcionamiento de la ap
 ](https://nohestmm.github.io/SCL009-Cipher/src/index.html)
 
 ### Pasos a seguir 
-* Dar click en el boton de acceso.
-* Colocar un desplazamiento para lograr cifrar o descifrar.
-* Escribir en el textarea los datos que se quieren encriptar.
-* Pulsar el boton de cifrado o descifrado.
-* Visualizar el resultado.
-* Limpiar los campos para volver a cifrar o descifrar.
+1. Dar click en el boton de acceso.
+2. Colocar un desplazamiento para lograr cifrar o descifrar.
+3. Escribir en el textarea los datos que se quieren encriptar.
+4. Pulsar el boton de cifrado o descifrado.
+5. Visualizar el resultado.
+6. Limpiar los campos para volver a cifrar o descifrar.
 
 
 
